@@ -1,0 +1,1 @@
+{"hidden_size": 512, "n_hidden_layers": 2, "lr": 0.001, "activation": "softplus"}

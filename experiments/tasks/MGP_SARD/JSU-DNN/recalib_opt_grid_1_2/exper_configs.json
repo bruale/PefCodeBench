@@ -1,0 +1,41 @@
+{
+    "data_config": {
+        "dataset_name": "MGP_SARD_market__2015-01-01__2019-08-31.csv",
+        "idx_start_train": {
+            "y": 2015,
+            "m": 1,
+            "d": 10
+        },
+        "idx_start_oos_preds": {
+            "y": 2018,
+            "m": 3,
+            "d": 1
+        },
+        "idx_end_oos_preds": {
+            "y": 2019,
+            "m": 8,
+            "d": 31
+        },
+        "keep_past_train_samples": false,
+        "steps_lag_win": 7,
+        "pred_horiz": 24,
+        "preprocess": "StandardScaler",
+        "shuffle_mode": "train_vali",
+        "num_vali_samples": 291
+    },
+    "model_config": {
+        "PF_method": "JSU",
+        "model_class": "DNN",
+        "optuna_m": "grid_search",
+        "target_alpha": [
+            0.2,
+            0.4,
+            0.6,
+            0.8
+        ],
+        "max_epochs": 800,
+        "batch_size": 64,
+        "patience": 100,
+        "num_ense": 1
+    }
+}
