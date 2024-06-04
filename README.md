@@ -13,7 +13,7 @@ aggregated by <code>regions-> methods-> recalibration</code> runs.
 
 Note: in the code we used 'DE' to label the German market while in the paper we employed 'GE' since 'DE' was already employed to label Deep Ensembles.
 
-The employed packages versions are stored in the <code>requirements.txt</code> file (Python 3.8.10). Besides, the code to perform/plot the DM-tests and Conformal PI are built upon https://github.com/jeslago/epftoolbox and https://github.com/aangelopoulos/conformal-time-series respectively.  
+The employed packages versions are stored in the <code>requirements.txt</code> file (Python 3.8.10). Besides, the code to perform/plot the DM-tests, Kupiec tests and Conformal PI are built upon https://github.com/jeslago/epftoolbox, https://github.com/rafa-rod/vartests and https://github.com/aangelopoulos/conformal-time-series respectively.  
 
 The script <code>results_analysis.py</code> contains the functions to obtain the plots/tables in the *Results* section of the paper from the stored pickle.
 
